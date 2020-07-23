@@ -16,7 +16,7 @@
     when:
     - ansible_distribution == "Ubuntu"
   - name: uninstall python docker
-    yum:
+    apt:
       name: python-docker
       state: absent
     when:
