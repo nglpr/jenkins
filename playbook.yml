@@ -28,7 +28,7 @@
     when:
     - ansible_distribution == "Ubuntu"
   - name: pull image dari docker hub
-    docker_image::
+    docker_image:
       name: "{{ image }}"
       state: present
       force: yes
