@@ -11,7 +11,7 @@
     - ansible_distribution == "CentOS"
   - name: install python docker ubuntu
     apt:
-      name: python-pip
+      name: python3-pip
       state: present
     when:
     - ansible_distribution == "Ubuntu"
